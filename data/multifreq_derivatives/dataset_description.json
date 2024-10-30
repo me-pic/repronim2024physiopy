@@ -1,0 +1,22 @@
+{
+    "Name": "multifreq_derivatives",
+    "BIDSVersion": "1.9.0",
+    "DatasetType": "derivative",
+    "GeneratedBy": [
+        {
+            "Name": "peakdet",
+            "Version": "0.3.0",
+            "CodeURL": "https://github.com/physiopy/peakdet/archive/0.3.0.tar.gz"
+        },
+        {
+            "Name": "phys2denoise",
+            "Version": "0.4.0",
+            "CodeURL": "https://github.com/physiopy/phys2denoise/archive/0.4.0.tar.gz"
+        }
+    ],
+    "SourceDatasets": [
+        {
+            "URL": "https://github.com/me-pic/repronim2024physiopy/tree/master/data"
+        }
+    ]
+}
