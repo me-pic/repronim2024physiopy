@@ -36,27 +36,7 @@ Once you activated the virtual environment, you can proceed with package install
 
 ## 2. Package installation
 
-You will need to install a few python packages. First and foremost, [_wxPython_](). Its installation depends on the OS you are using.
-While you can find [detailed instructions here](https://wxpython.org/pages/downloads/), following is the summary.
-
-### Install _wxPython_ on Windows and macOS
-``` shell
-pip install -U wxPython
-```
-(Note you might need to use _pip3_ instead of _pip_, depending on your OS and setup, to work with python 3)
-
-### Install _wxPython_ on Linux
-Check [this folder](https://extras.wxpython.org/wxPython4/extras/linux/) for the right python package, depending on the version of GTK you are using, as well as your OS, then using the link to the right folder, install _wxPython_ version _4.2.0_, if possible.
-In this example, I will assume we're working with GTK3 on Ubuntu 20.04:
-``` shell
-pip install -U \
-    -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04 \
-    wxPython==4.2.0
-```
-(Note you might need to use _pip3_ instead of _pip_, depending on your OS and setup, to work with python 3)
-
-### Install all other packages
-You also need to install _peakdet_ and _phys2denoise_. Optionally, you can also install _ipython_, a nice CLI environment to work with python.
+You need to install _phys2bids_, _physutils_, _peakdet_ and _phys2denoise_. Optionally, you can also install _ipython_, a nice CLI environment to work with python.
 
 The fastest option is to use the _requirements.txt_ file in this repository:
 ``` shell
@@ -67,15 +47,16 @@ pip install -U -r requirements.txt
 
 Alternatively, you can install directly what you need. Please ensure to install matplotlib version 3.6.3 or below, otherwise you will incur into a deprecation error:
 ``` shell
-pip install -U phys2bids peakdet phys2denoise matplotlib==3.6.3 ipython
+pip install -U phys2bids physutils peakdet phys2denoise==0.5.0 matplotlib==3.6.3 ipython
 ```
 (Note you might need to use _pip3_ instead of _pip_, depending on your OS and setup, to work with python 3)
 
 ## 3. Check the installation
-Within the virtual environment, you can either call _pip_ to list your packages (`pip list` or `pip3 list`), or open ipython and import _peakdet_ and _phys2denoise_
+Within the virtual environment, you can either call _pip_ to list your packages (`pip list` or `pip3 list`), or open ipython and import _phys2bids_, _physutils_, _peakdet_ and _phys2denoise_
 ```python
-import phys2bids
 import peakdet
+import physutils
+import phys2bids
 import phys2denoise
 ```
 
