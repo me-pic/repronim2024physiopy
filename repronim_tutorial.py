@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# TODO: Update to match the notebook
+
 import numpy as np
 import matplotlib.pyplot as plt
 import peakdet as pk
