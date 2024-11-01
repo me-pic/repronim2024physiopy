@@ -47,7 +47,7 @@ pip install -U -r requirements.txt
 
 Alternatively, you can install directly what you need. Please ensure to install matplotlib version 3.6.3 or below, otherwise you will incur into a deprecation error:
 ``` shell
-pip install -U phys2bids physutils peakdet phys2denoise==0.5.0 matplotlib==3.6.3 ipython
+pip install -U phys2bids[acq] physutils peakdet phys2denoise==0.5.0 matplotlib==3.6.3 ipython
 ```
 (Note you might need to use _pip3_ instead of _pip_, depending on your OS and setup, to work with python 3)
 
