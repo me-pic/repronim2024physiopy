@@ -69,3 +69,32 @@ If you have no issues doing that, you're all good to go!
 We are providing some data in this repository in the `data` folder. This folder includes `multifreq.acq` file containing raw physiological data, and `heur_tutorial.py`file that would be use for the `phys2bids` part of the tutorial. 
 
 If you have your own data, feel free to _also_ bring it with you!
+
+## 5. Let's get started !
+
+All the code can be found in the jupyter notebook [repronim_tutorial.ipynb](https://github.com/me-pic/repronim2024physiopy/blob/master/repronim_tutorial.ipynb). 
+
+The recorded version of this code demo also show the CLI usage for `phys2bids`. All the steps are showed below.
+
+
+You can find all the information you need to interact with phys2bids from the commandline by running:
+
+```
+phys2bids -h
+```
+or
+```
+phys2bids --help
+```
+
+Load in the data and take a look.
+
+```
+phys2bids -in multifreq.acq -out multifreq_info -info
+```
+
+Let's split the dataset into its functional scans and bids-ify the data using the heuristic file!
+
+```
+phys2bids -in multifreq.acq -out multifreq_bids -ntp 60 -tr 1.5 -chsel 1 2 3 4 -sub 002 -ses 01 -heur heur_tutorial.py -chnames resp1 resp2 trigger ppg
+```
