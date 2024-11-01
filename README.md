@@ -1,4 +1,4 @@
-# Material for Physiopy's code demo for the ReproNim webinar "Physiopy Community: working towards accessible and reproducible data usage in neuroimaging studies"
+# Material for Physiopy's code demo for the ReproNim webinar "Physiopy Community: working towards accessible and reproducible data integration in neuroimaging studies"
 
 In this repository you can find the data and the code to follow Physiopy's code demo, part of the ReproNim monthly webinar (November 1st 2024) _Physiopy Community: working towards accessible and reproducible data usage in neuroimaging studies_
 
